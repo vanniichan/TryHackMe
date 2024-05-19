@@ -6,4 +6,4 @@
 
 | STT | Name Room | Room |
 | --- | --- | --- |
-| 1 | Linux Strength Training | [Room](https://tryhackme.com/r/room/linuxstrengthtraining) |
+| 1 | Linux Strength Training | [Link](https://tryhackme.com/r/room/linuxstrengthtraining) |
