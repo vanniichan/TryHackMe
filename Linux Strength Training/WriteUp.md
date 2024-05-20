@@ -1,5 +1,7 @@
 <h2>Task 3 - Working with files</h2>
 
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/14c60062-f9f7-4c2f-bc82-a6e0f1adbb74)
+
 **Q1**: `mv * /home/francis/logs`
 
 **Q2**: `scp /home/james/Desktop/script.py john@192.168.10.5:/home/john/scripts`
@@ -25,3 +27,7 @@ Sau đó `cat` để để đọc file và ta có nội dung sau:
 Sử dụng `mv -- -MoveMe.txt "'-march folder'"` để chuyển `-MoveMe.txt` vào `'-march folder'` theo yêu cầu:
 
 ![image](https://github.com/vanniichan/TryHackMe/assets/112863484/31b11344-337d-44bf-a289-8ff30dc9607d)
+
+Sau khi xong thì `./-runME.sh` để lấy flag:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/b82ac9d4-0f0e-4fd8-b7c5-07fac4b0af03)
