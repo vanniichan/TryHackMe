@@ -140,8 +140,23 @@ Tuy nhiên server nầy không hỗ trợ nên lại phải làm như `Task 5` l
 
 <h2>Task 8 - Reading SQL databases</h2>
 
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/77f60941-afd8-49fc-8fcf-0a385e097120)
+
+Tìm file employees.sql và chạy lệnh `mysql -u sarah -p` password `password`
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/ff4e41bd-8386-4928-8d9e-1ce17a5d4b0c)
+
+Theo hint ta cần tìm người tên là `Lobel`, sau đó cần tìm field để lấy điều kiện tìm:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/e1a0dfdc-bb7b-4edd-8cad-8e491dae3bd3)
+
+Sử dụng `SELECT * FROM employees WHERE first_name  = "Lobel"`:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/9129b52a-efc8-466a-98ea-8f4ea0715828)
 
 <h2>Task 9 - Reading SQL databases</h2>
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/5ec360a8-c610-4ec3-8620-275d3e0ab2ac)
 
 **Q2**:
 
@@ -172,4 +187,19 @@ Lấy được nội dung đem đi dcode và tấy láy được dir của file 
 
 ![image](https://github.com/vanniichan/TryHackMe/assets/112863484/aba757b4-1328-4873-9a9a-5190d2525b82)
 
+**Q4**:
+
+mysql -u sarah -p (enter password for password) source employees.sql show databases; use employees; describe employees; select * from employees where first_name like 'James'
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/10779c6e-48cb-4121-a1b1-ee4be75bec92)
+
+**Q6**:
+
+Sau khi ssh vào thì `sudo su` để bắt đầu đọc file `root.txt`:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/3c857770-b2e0-4baa-8149-29690d39913c)
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/485eee4b-07de-4813-8019-04172fad3572)
+
+**FINAL FLAG: Flag{6$8$hyJSJ3KDJ3881}**
 
