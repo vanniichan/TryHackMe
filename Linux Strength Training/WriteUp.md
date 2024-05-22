@@ -79,3 +79,97 @@ Tìm và đọc nội dung file:
 Sau khi biết được nó là loại hash gì thì tiến hành crack ra:
 
 ![image](https://github.com/vanniichan/TryHackMe/assets/112863484/8d78609a-1fcc-4c82-a473-079f569ffe2f)
+
+<h2>Task 5 - Decoding base64</h2>
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/91b3cc65-8a6c-44fa-bbc4-d067b74f3faa)
+
+<h2>Task 6 - Encryption/Decryption using gpg</h2>
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/75977548-77c5-4b9e-8b2e-5d776d6b16d6)
+
+**Q2**: `gpg --cipher-algo AES-128 --symmetric history_logs.txt`
+
+**Q3**: `gpg history_logs.txt.gpg`
+
+**Q4**:
+
+Tìm và vào thư mục có `layer4.txt`:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/e1a8e10c-5ba3-4742-9ae4-40843ac6294e)
+
+Sử dụng `gpg layer4.txt` để lấy decrypt file:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/042bbabc-cdb1-4f86-ab8a-07e6efd9a860)
+
+Ta sẽ lấy được nội dung, tuy nhiên nó cứ dẫn sang các layer khác và ta cũng làm tương tự:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/81059c68-77c3-4d2a-a129-3b6cda246f18)
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/0244d53e-d54d-4e7e-b4d8-dfda5d0e175b)
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/afe3ccf5-ebdc-4a91-9739-fef56b1a6a48)
+
+Về đến `layer1.txt` thì lấy được flag : ) :
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/f2f4796e-b015-4e67-8a5b-b174a41f2b3d)
+
+<h2>Task 7 - Cracking encrypted gpg files</h2>
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/7b6dc6af-17f5-4ece-bb8f-cd562c876419)
+
+**Q2**:
+
+Tìm 2 file theo yêu cầu đề bài:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/c6feb2af-3b34-42af-b031-05f9c63037a5)
+
+Tuy nhiên server nầy không hỗ trợ nên lại phải làm như `Task 5` là lấy file về máy để dùng:
+
+`gpg2john personal.txt.gpg > hash.txt`
+
+Đợi lâu vcut để lấy được password: `valamanezivonia`:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/56128078-b92c-423d-857e-6d3e9387a62d)
+
+**Q3**:
+
+`gpg personal.txt.gpg` với password là `valamanezivonia` sau đó cat file ra và lấy được nội dung file:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/2d5893d2-482b-4c34-b9d8-2f7101d3a036)
+
+<h2>Task 8 - Reading SQL databases</h2>
+
+
+<h2>Task 9 - Reading SQL databases</h2>
+
+**Q2**:
+
+Sau khi theo `Q1` thì khá là bị bịp nếu không đọc hint. Sử dụng lệnh dưới để tìm đến đoạn hội thoại chính xác để lấy key:
+
+```
+grep -iRl "Sameer" /home 2>/dev/null
+
+///-i được sử dụng để tìm kiếm không phân biệt chữ hoa chữ thường, -R là tìm kiếm đệ quy trong tất cả các tệp và -l chỉ in các tệp khớp với từ tôi đang tìm kiếm
+```
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/e9cc7272-d26f-43ec-bc66-d3835ed2f1e5)
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/5c7d2a69-b25e-4c04-b92c-fcbc4b7987b5)
+
+**Q3**:
+
+Quay lại đoạn hội thoại tìm được từ `Q2` ta thấy có 1 file có size 50M chứa key:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/18c98d2d-b23c-4687-a102-50d4b1de88c8)
+
+Sử dụng `ls -lah`với h là in ra dung lượng tệp:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/1d0abbf9-bfcc-419f-adae-0dca94e19ef2)
+
+Lấy được nội dung đem đi dcode và tấy láy được dir của file wordlist:
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/24c1dcdc-c9c6-4c90-b09f-c5ae80605a6a)
+
+![image](https://github.com/vanniichan/TryHackMe/assets/112863484/aba757b4-1328-4873-9a9a-5190d2525b82)
+
+
