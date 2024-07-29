@@ -10,3 +10,4 @@
 | 2 | Ninja Skills | [Link](https://tryhackme.com/r/room/ninjaskills)| [Here](https://github.com/vanniichan/TryHackMe/tree/main/Ninja%20Skills)
 | 3 | Corridor | [Link](https://tryhackme.com/r/room/corridor)| [Here](https://github.com/vanniichan/TryHackMe/tree/main/Corridor)
 | 4 | OWASP Juice Shop | [Link](https://tryhackme.com/r/room/owaspjuiceshop)| [Here](https://github.com/vanniichan/TryHackMe/tree/main/OWASP%20Juice%20Shop)
+| 5 | Basic Pentesting | [Link](https://tryhackme.com/r/room/basicpentestingjt) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Basic%20Pentesting)|
