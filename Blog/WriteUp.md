@@ -1,13 +1,13 @@
 ![image](https://hackmd.io/_uploads/H1f09sa9C.png)
 
-# Challange info and Comment
-## Challange info
+# Challenge info and Comment
+## Challenge info
 Billy Joel made a blog on his home computer and has started working on it.  It's going to be so awesome!
 
 Enumerate this box and find the 2 flags that are hiding on it!  Billy has some weird things going on his laptop.  Can you maneuver around and get what you need?  Or will you fall down the rabbit hole...
 
 ## Comment
-Challange khá là dễ nhưng thêm 1 kỹ thuật leo quuyền về SUID nữa nên tôi lại phải viết Wup cho đỡ quên : )
+Challenge khá là dễ nhưng thêm 1 kỹ thuật leo quuyền về SUID nữa nên tôi lại phải viết Wup cho đỡ quên : )
 
 # Recon
 ## nmap 
@@ -338,4 +338,4 @@ cat /media/usb/user.txt
 c8421899aae571f7af486492b****
 ```
 
---------------------Kết thúc Challange!--------------------
+--------------------Kết thúc Challenge!--------------------
