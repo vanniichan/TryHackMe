@@ -13,3 +13,4 @@
 | 5 | Basic Pentesting | [Link](https://tryhackme.com/r/room/basicpentestingjt) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Basic%20Pentesting)|
 | 6 | Kenobi | [Link](https://tryhackme.com/r/room/kenobi) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Kenobi)|
 | 7 | Steel Mountain | [Link](https://tryhackme.com/r/room/steelmountain) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Steel%20Mountain)|
+| 8 | Blog | [Link](https://tryhackme.com/r/room/blog) | [Link](https://github.com/vanniichan/TryHackMe/blob/main/Blog/WriteUp.md) | 
