@@ -14,3 +14,4 @@
 | 6 | Kenobi | [Link](https://tryhackme.com/r/room/kenobi) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Kenobi)|
 | 7 | Steel Mountain | [Link](https://tryhackme.com/r/room/steelmountain) | [Here](https://github.com/vanniichan/TryHackMe/tree/main/Steel%20Mountain)|
 | 8 | Blog | [Link](https://tryhackme.com/r/room/blog) | [Link](https://github.com/vanniichan/TryHackMe/blob/main/Blog/WriteUp.md) | 
+| 9 | Mr Robot | [Link](https://tryhackme.com/r/room/mrrobot) | [Link](https://github.com/vanniichan/TryHackMe/blob/main/Mr%20Robot/WriteUp.md) |
